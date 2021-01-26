@@ -60,7 +60,7 @@ function isCheck(){
     prima = "";
 
     // menunjukan ganjil genap
-   for (i=1; i<=num; i++){
+   for (i=0; i<=num; i++){
 
         if((i % 2) === 0){
             genap += i + " ";
