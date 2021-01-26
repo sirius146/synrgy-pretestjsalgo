@@ -1,8 +1,9 @@
 function isBesok(){
-    let days,besok
+    let days,besok,besok2
     days = document.getElementById('hari').value;
-    var day = hari.value;
+    let day = hari.value;
 
+    //versi switch
     switch(day){
         case 'senin':
             besok = "selasa"
@@ -27,7 +28,27 @@ function isBesok(){
             break; 
     }
 
-    document.getElementById('hasilhari').innerHTML = "besok hari " + besok;
+    //versi if else
+    if (day = "senin") {
+        besok2 = "selasa"
+    } else if (day = "selasa") {
+        besok2 = "rabu"
+    } else if (day = "rabu") {
+        besok2 = "kamis"
+    } else if (day = "kamis") {
+        besok2 = "jumat"
+    } else if (day = "jumat") {
+        besok2 = "sabtu"
+    } else if (day = "sabtu") {
+        besok2 = "minggu"
+    } else if (day = "minggu") {
+        besok2 = "senin"
+    }
+
+
+    document.getElementById('hasilhari').innerHTML = "besok hari(versi switch) = " + besok;
+    document.getElementById('hasilhari2').innerHTML = "besok hari(versi if-else) = " + besok;
+
 }
 
 function isCheck(){
